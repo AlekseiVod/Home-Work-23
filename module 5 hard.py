@@ -3,9 +3,9 @@ import time
 
 class User:
     def __init__(self, nickname: str, password: str, age: int):
-        self.nickname = nickname  # имя пользователя, строка
-        self.password = password  # в хэшированном виде, число
-        self.age = age  # возраст, число
+        self.nickname = nickname  
+        self.password = password  
+        self.age = age  
 
     def __str__(self):
         return f'{self.nickname}'
@@ -19,10 +19,10 @@ class User:
 
 class Video:
     def __init__(self, title: str, duration: int, time_now: int = 0, adult_mode: bool = False):
-        self.title = title  # заголовок, строка
-        self.duration = duration  # продолжительность, секунды
-        self.time_now = time_now  # секунда остановки (изначально 0)
-        self.adult_mode = adult_mode  # ограничение по возрасту, bool (False по умолчанию)
+        self.title = title  
+        self.duration = duration  
+        self.time_now = time_now  
+        self.adult_mode = adult_mode  
 
     def __str__(self):
         return f"{self.title}"
